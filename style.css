@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background: rgb(91, 94, 119);
+    color:blanchedalmond;
+    font:16px;
+    font-family: 'Lato', sans-serif;
+    padding:10px;
+
+
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.conteiner{
+    width: 80%;
+    margin:auto;
+}
+/* Navegador */
+
+.nav-main{
+   font-size:  17px;
+   display: flex;
+   justify-content:space-between;
+
+}
+
+/*navegacion izquierda*/
+.nav-main ul{ 
+    display:flex;
+}
+.nav-main ul li{
+    padding:20px;
+
+}
+.nav-main ul li a{
+    padding: 4 px;
+}
+.nav-main ul li a:hover{
+    border-bottom: 2px solid white;
+}
+.nav-main ul.nav-menu{
+    flex:1;
+    margin-left: 10px;
+}
+hr{
+    margin :10 px;
+}
+/* SHOWCASE*/
+.showcase{
+    width:90%;
+    height: 500px;
+    padding-bottom: 550px;
+    margin-bottom:20px;
+}
+.imagen2{
+    width:600px;
+    height:290px;
+   margin-top: 20px;
+   margin-left: 150px;
+
+}
+.showcase p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*Referencia a los tipos de heat exchangers*/
+.tipos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tipos img{
+    width:500px;
+    height:200px;
+
+}
+.tipos h3{
+    font-size: 20px;
+    margin :10px 0;
+
+}
+.tipos a{
+    padding:10px 0;
+    color: white;
+    text-transform: uppercase;
+    display:inline-block;
+    font-weight:bold ;
+
+}
+.tipos a:hover{
+    text-decoration: underline;
+}
+/* social*/
+.social{
+    margin:50px;
+}
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom:20px;
+}
+.links{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.links a{
+    margin: 0 30px;
+
+}
+.links a i{
+    font-size:3rem;
+    
+}
+h2{
+    margin-top:10px;
+    color: white;
+}
+.fotoi{
+    margin-top:20px;
+    margin-left: 200px;
+    width:500px;
+    height:300px;
+}
+.tipos2{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.fotoin{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.shell{
+    font-size: 6 px;
+    font-family: 'Lato', sans-serif;
+}
+.counter{
+    font-size:6px;
+    font-family: 'Lato', sans-serif;
+    
+}
+.futuro{
+   margin-top: 40 px;
+}
+.future{
+    margin-bottom:20 px;
+}
+
+

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Heat Exchangers</title>
+
+    <!---Iconos-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!---Acceder a CSS-->
+
+    <link rel="stylesheet" href="style.css">
+
+    
+
+    <!---Font type-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+    <div class="conteiner"> 
+
+        <nav class="nav-main">
+
+            <ul class="nav-menu">
+
+                <li>
+
+                    <a href= "paginaweb.html">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href= "Introducción.html">
+
+                        Introducción a los intercambiadores de calor
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href= "#">
+
+                        Metodos
+
+                    </a>
+
+                </li>
+
+
+
+            </ul>
+
+        </nav>
+
+<hr>
+
+        <header class="showcase">
+
+          <h2>
+
+Métodos de cálculo de intercambiadores de calor
+
+</h2>
+
+          <p>
+
+A la hora de diseñar los intercambiadores de calor existen varios métodos aplicables 
+
+que ayudarán al ingeniero a conseguir los resultados de una manera más sencilla y 
+
+eficaz posible. De esta forma se podrá conseguir encontrar el intercambiador de calor 
+
+óptimo para cada cliente.
+
+</p>
+
+<br>
+
+
+<center>
+<h1>
+
+Método epsilon-NTU
+
+</h1>
+</center>
+
+<p>
+
+El método que os introduciremos es el método de espilon-NTU, el cual siver para resolver problemas 
+
+de rendimiento. El fundamento de este método se basa en el cálculo de dos números adimensionales,
+
+epsilon y NTU de los cuales podremos graficarlas de manera que se podrá determinar un tercer 
+
+número adimensional con el que se podrán finalmente calcular las temperaturas de salida.
+
+<br><br>
+
+Desarrollado por London y Seban en 1942, este método es muy usado hoy en día cuando se 
+
+quiere seleccionar un intercambiador entre varios disponibles o si se necesita para 
+
+un uso diferente para el que se diseñó en su día.
+
+<br><br>
+
+
+<center>
+<h2>
+
+Parámetros:
+
+</h2>
+
+<p>m<sub>h</sub>: Flujo másico del fluido caliente</p>
+
+<p>m<sub>c</sub>: Flujo másico del fluido frio</p>
+
+<p>T<sub>h,in</sub>: Temperatura de entrada del fluido caliente</p>
+
+<p>T<sub>h,out</sub>: Temperatura de salida del fluido caliente</p>
+
+<p>T<sub>c,in</sub>: Temperatura de entrada del fuido frio</p>
+
+<p>T<sub>c,out</sub>: Temperatura de salida del fluido frio</p>
+
+<p>C<sub>p,h</sub>: Calor específico del fluido caliente</p>
+
+<p>C<sub>p,c</sub>: Calor específico del fluido frio</p>
+
+<p>C<sub>h</sub>: Capacidad de transferencia del fluido caliente, C<sub>h</sub>=m<sub>h</sub>*C<sub>p,h</sub> </p>
+
+<p>C<sub>c</sub>: Capacidad de transferencia del fluido frio, C<sub>c</sub>=m<sub>c</sub>*C<sub>p,c</sub> </p><br>
+
+
+
+</center>
+
+<ol>
+
+
+
+<li>q<sub>max</sub>: El máximo q posible. Cuando la diferencia de temperaturas 
+
+es máxima para uno de los flujos. Esto puede ser calculado si el intercambiador de calor 
+
+tiene una longitud infinita.</li>
+
+<p class="qmax">q <sub>max</sub>=C<sub>min</sub>*&#916T<sub>max</sub></p>
+
+<p class="tmax">&#916T<sub>max</sub>= T<sub>h,in</sub>-T<sub>c,in</sub></p><br>
+
+
+
+<li>Efectividad, &#949: Relación entre el actual q con q<sub>max</sub></li>
+
+<p class="epsilon"> &#949=<sup>q</sup>/<sub>q<sub>max</sub></sub>=<sup>C<sub>c</sub>*(T<sub>c,out</sub>-T<sub>c,in</sub>)</sup>/<sub>C<sub>min</sub>*(T<sub>h,in</sub>-T<sub>c,in</sub>)</sub>  
+
+=<sup>C<sub>h</sub>*(T<sub>h,in</sub>-T<sub>h,out</sub>)</sup>/<sub>C<sub>min</sub>*(T<sub>h,in</sub>-T<sub>c,in</sub>)</sub></p>
+
+<br>
+
+
+
+<li>Ratio de capacidad de transferencia, C<sub>r:</sub></li>
+
+<p class= "Cr">C<sub>r</sub>=<sup>C<sub>min</sub></sup>/<sub>C<sub>max</sub></sub>
+
+<br>Cambio de fase: C<sub>max</sub>&#8594 &#8734 , entonces C<sub>r</sub>&#8594 0</p>
+
+
+
+<br><li>Número de unidades de transferencia, NTU</li>
+
+<p>NTU= <sup>U*A</sup>/<sub>C<sub>min</sub></sub></p>
+
+
+
+
+
+</ol>
+
+</p>
+
+<h2 class="procedimiento">Procedimiento método epsilon-NTU</h2><br>
+
+<ol>
+
+  <li>Cálculo de NTU: </li><br>
+
+  <li>Cálculo de Cr: </li><br>
+
+  <li>Cálculo de &#949: Para calcular el epsilon se pueden usar dos maneras diferentes. Si se quiere el valor exacto se puede resolver la ecuación analítica. Para hacer 
+
+  el cálculo de una forma aproximada, se puede obtener la &#949 a partir de las gráficas, el cual es la manera más rápida y eficaz.</li>
+<br>
+  <li>Calculo de q: <br>
+
+  <p>q=&#949*q<sub>max</sub></p></li><br>
+
+  <li>Cálculo de temperaturas de salida:
+
+  <p>T<sub>c,out</sub>=T<sub>c,in</sub>+<sup>q</sup>/<sub>C<sub>c</sub></sub></p>
+
+  <p>T<sub>h,out</sub>=T<sub>h,in</sub>-<sup>q</sup>/<sub>C<sub>h</sub></sub></p>
+
+  </li>
+
+</ol>
+
+</header>
+</div>
+</body>
+</html>
